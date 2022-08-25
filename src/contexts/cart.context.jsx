@@ -4,7 +4,6 @@ export const addCartItem = (cartItems, productToAdd) => {
   const existingCartItem = cartItems.find(
     (cartItem) => cartItem.id === productToAdd.id
   );
-  console.log(existingCartItem);
   if (existingCartItem) {
     return cartItems.map((cartItem) =>
       cartItem.id === productToAdd.id
@@ -21,11 +20,9 @@ export const removeCartItem = (cartItems, cartRemoveItem) => {
     (cartItem) => cartItem.id === cartRemoveItem.id
   );
 
-  //數量等於1移除item
   if (existingCartItem.quantity === 1) {
     return cartItems.filter((cartItem) => cartItem.id !== cartRemoveItem.id);
   }
-  //數量大於1數量減1
 
   return cartItems.map((cartItem) =>
     cartItem.id === cartRemoveItem.id

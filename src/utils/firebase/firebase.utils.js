@@ -44,7 +44,7 @@ export const signInWithGoogleRedirect = () =>
   signInWithRedirect(auth, googleProvider);
 
 export const db = getFirestore();
-//TODO 印印看得到什麼&重新寫
+//TODO
 export const addCollectionAndDocuments = async (collectionKey, objectToAdd) => {
   const collectionRef = collection(db, collectionKey);
   const batch = writeBatch(db);
@@ -76,10 +76,7 @@ export const createUserDocumentFromAuth = async (
 ) => {
   if (!userAuth) return;
   const userDocRef = doc(db, "users", userAuth.uid);
-  console.log(userDocRef);
   const userSnapshot = await getDoc(userDocRef);
-  console.log(userSnapshot);
-  console.log(userSnapshot.exists());
 
   if (!userSnapshot.exists()) {
     const { displayName, email } = userAuth;
