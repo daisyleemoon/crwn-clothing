@@ -4,18 +4,17 @@ https://cerulean-sfogliatella-450421.netlify.app/
 
 ## Skills
 
-React
-ReactRouter
-React hooks
-
-- useState
-- useEffect
-- useContext
-- useReducer
-  FireBase Authentication
-  FireBaseStorage
-  Git
-  GitHub
+- React
+- ReactRouter
+- React hooks
+- - useState
+- - useEffect
+- - useContext
+- - useReducer
+- FireBase Authentication
+- FireBaseStorage
+- Git
+- GitHub
 
 #### Navigation
 
