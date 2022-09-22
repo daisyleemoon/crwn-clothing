@@ -4,3 +4,5 @@ export const selectorCategoriesMap = (state) =>
     acc[title.toLowerCase()] = items;
     return acc;
   }, {});
+
+export const selectCategoriesIsLoading = (state) => state.categories.isLoading;

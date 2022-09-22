@@ -4,10 +4,6 @@ import FormInput from "../form-input/form-input.component";
 import Button from "../button/button.component";
 
 import {
-  signInAuthUserWithEmailAndPassword,
-  signInWithGooglePopup,
-} from "../../utils/firebase/firebase.utils";
-import {
   googleSignInStart,
   emailSignInStart,
 } from "../../store/user/user.action";
@@ -28,8 +24,7 @@ const SignInForm = () => {
   };
 
   const signInWithGoogle = async () => {
-    dispatch(googleSignInStart);
-    // await signInWithGooglePopup();
+    dispatch(googleSignInStart());
   };
 
   const handleSubmit = async (event) => {
@@ -37,7 +32,6 @@ const SignInForm = () => {
 
     try {
       dispatch(emailSignInStart(email, password));
-      // await signInAuthUserWithEmailAndPassword(email, password);
       resetFormFields();
     } catch (error) {
       switch (error.code) {
