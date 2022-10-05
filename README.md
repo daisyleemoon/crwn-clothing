@@ -1,42 +1,31 @@
-# Cloth Online Shop
+# Crown Clothes Online Shop
+
+A fashion clothes online shop can find clothes and accessories easily
+This shop has clear a index and categories of products,and user can pay easily. 
 
 https://cerulean-sfogliatella-450421.netlify.app/
 
-## Skills
-
-- React
-- ReactRouter
-- React hooks
-- - useState
-- - useEffect
-- - useContext
-- - useReducer
-- FireBase Authentication
-- FireBaseStorage
-- Git
-- GitHub
+## Features
 
 #### Navigation
-
-顯示登入者、購物車狀態
+Show user sign in or sign up and also show the state of shopping cart
 ![](https://i.imgur.com/EMhtK4D.png)
 
 #### HomePage
-
-顯示商品分類
+The Index of all products
 ![](https://i.imgur.com/LJx54JL.png)
 
 #### Sign in and Sign Up
-
-提供登入以及註冊功能
+Sign up form for signing up
+User can sign in by email or google
 ![](https://i.imgur.com/RVClFox.png)
 
 #### Shop
-
-商品目錄
+Categories of products
 ![](https://i.imgur.com/ebpH6Kn.jpg)
 
 #### Checkout and Shopping Cart
-
-顯示購買商品總額及數量，購物車功能
-![](https://i.imgur.com/abvbnEs.png)
+Show all of products in shopping cart
+Payment gateway for credit card
+Test card number: 4242-4242-4242-4242 MM/YY&CVC: any
+![](https://i.imgur.com/LnwNsiN.png)
